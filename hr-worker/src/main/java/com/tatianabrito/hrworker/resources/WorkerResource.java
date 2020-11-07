@@ -39,13 +39,13 @@ public class WorkerResource {
 		if (x == 1)
 		throw new RuntimeException("Test");*/
 		
-	/*	try {
+		try {
 			Thread.sleep(3000L);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		*/
+		
 		logger.info("PORT = " + env.getProperty("local.server.port"));
 		
 		Worker obj = repository.findById(id).get();
